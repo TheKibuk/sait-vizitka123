@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap');
+
+.asd p{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.asd{
+    margin-bottom: 60px;
+    margin-top: 60px;
+    background-color: black;
+    color:white
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +24,14 @@ header {
     background: url(Html_header.jpg);
     background-size: cover;
     display: flex;
+    opacity: 0;
+    animation: ani 2.5s forwards;
 }
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 .header_left {
     width: 65%;
@@ -32,6 +52,7 @@ header {
 
 .bio {
     width: 60%;
+    color:blue;
 }
 
 
@@ -88,8 +109,7 @@ section h1 {
 
 
 .projects {
-    color: white;
-    background: black;
+    background: white;
 }
 
 .github:hover {
@@ -116,4 +136,9 @@ footer {
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.contacts{
+    background-color: black;
+    color:white;
 }
